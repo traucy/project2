@@ -1,0 +1,72 @@
+*, *::after, *::before {
+	box-sizing: border-box;
+}
+
+.container {
+	/* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+	/* flex grow, flex shrink, flex basis */
+	flex: 1 1 15em;
+	/* flex-basis: 15em; */
+	padding: 1em 1em 1em 1em;
+	display: flex;
+  flex-wrap: wrap;
+	/* border: 1px dashed blue; */
+	border: 1px dashed #CECECE;
+}
+
+.block {
+  flex: 1 1 20em;
+  /* flex-basis: 20em; */
+	padding: 1em 1em 1em 1em;
+	/* border: 1px dashed purple; */
+}
+
+.spacer {
+  flex: 1 1 20em;
+	/* border: 1px dashed purple; */
+	height: 7em;
+}
+
+.menu-container {
+
+	flex: 1 1 30em;
+	flex-basis: 1em;
+	padding: 1em;
+	display: flex;
+  flex-wrap: wrap;
+	/* border: 1px dashed green; */
+	/* border: 1px dashed #CECECE; */
+}
+
+.header-block {
+  flex: 1 1 20em;
+  /* flex-basis: 20em; */
+	padding: 0em 1em 4.1em 1em;
+  border: 1px dashed #CECECE;
+}
+
+.image-container {
+	flex: 1 1 35em;
+	/* flex-basis: 35em; */
+	padding: 0.4em 1em 1em 1em;
+	/* border: 1px dashed red; */
+	border: 1px dashed #CECECE;
+}
+
+.content-container {
+	flex: 1 1 23em;
+	/* flex-basis: 23em; */
+	padding: 0em 1em 1em 1em;
+	/* border: 1px dashed red; */
+	border: 1px dashed #CECECE;
+}
+
+.cart-container {
+	flex: 1 1 10em;
+
+}
+
+.ticket-container {
+	flex: 1 1 30em;
+
+}
