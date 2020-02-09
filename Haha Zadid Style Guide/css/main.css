@@ -1,0 +1,445 @@
+/*
+  STYLE GUIDE STYLING
+  Default styling for the style guide
+*/
+
+* {
+   font-family: "NotoSans";
+}
+
+code {
+  font-size: 0.8em;
+  color: #FF7F00;
+}
+
+.css-selector {
+  font-weight: bold;;
+
+}
+
+body {
+  background-color: #F2F2F2;
+  font-style: normal;
+  padding: 2em;
+}
+
+.element {
+  padding-bottom: 2rem;
+  margin: 0em;
+  border-top-width: 0.15rem;
+  border-top-style: solid;
+  border-top-color: black;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #FFC42D;
+}
+
+h2 {
+  max-width: 25rem;
+  font-size: 1.5rem;
+}
+
+h3 {
+  max-width: 40rem;
+  font-size: 1.3rem;
+}
+
+h4 {
+  font-weight: normal;
+  font-size: 1.2rem;
+}
+
+p {
+  /* margin-top: 0; */
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+}
+
+p, ol {
+	max-width: 21rem;
+}
+
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+}
+
+nav a:hover, nav a:focus {
+  text-decoration: none;
+}
+
+code {
+  background-color: #EEE;
+  padding: 0.5rem;
+  display: block;
+}
+
+/* unvisited link */
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: black;
+}
+
+/* mouse over link */
+a:hover {
+  color: black;
+}
+
+/* selected link */
+a:active {
+  color: black;
+}
+
+
+
+/*
+  INTERACTIVE ELEMENTS -------------------
+*/
+
+.in-text:link {
+  color: black;
+  text-decoration: underline;
+}
+
+
+/* Styling for the navigation button */
+.button-nav {
+  cursor: pointer;
+  display: inline-block;
+
+  background-color: #F2F2F2;
+  border-radius: 0em;
+  margin-right: 1em;
+  margin-bottom: 2em;
+  padding: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border: 1px solid black;
+
+  /* ways to add borders to the button.
+  outline doesn't do transition that well.
+  box-shadow only applies to 2 sides
+  https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_border-radius3
+  https://css-tricks.com/overriding-default-button-styles/ */
+
+  /* outline: black solid 1px; */
+  /* box-shadow: 1px 1px; */
+
+  color: black;
+  font-size: 1em;
+  text-decoration: none;
+  transition-property: background-color;
+  /* transition-duration: 0.3s; */
+  transition: all .2s ease-in-out;
+
+}
+
+.button-nav:hover, .button-nav:focus {
+  /* https://stackoverflow.com/questions/7648898/how-to-get-rid-of-blue-outer-border-when-clicking-on-a-form-input-field */
+  outline:none !important;
+
+  background-color: black;
+  border-radius: 2em;
+  /* outline: none; */
+
+  color: white;
+}
+
+
+
+
+
+.input-field {
+  display: inline-block;
+  padding: 0.5rem;
+  background-color: white;
+  /* outline: black solid 1px; */
+
+
+  border-top-style: none;
+  border-right-style: none;
+  border-bottom-style: solid;
+  border-left-style: none;
+
+  color: black;
+  font-size: 1em;
+  font-weight: bold;
+
+  text-decoration: none;
+  transition: all .2s ease-in-out;
+}
+
+.input-field:hover {
+  background-color: #FFC42D;
+  color: black;
+  font-weight: bold;
+}
+
+.input-field:focus {
+  /* https://stackoverflow.com/questions/7648898/how-to-get-rid-of-blue-outer-border-when-clicking-on-a-form-input-field */
+  outline:none;
+  background-color: white;
+  border: 1px solid #FFC42D;
+
+
+  /* border-top-style: none;
+  border-right-style: none;
+  border-bottom-style: solid;
+  border-left-style: none; */
+  border-color: #FFC42D;
+  /* border-bottom-width: medium; */
+
+  color: black;
+  font-weight: bold;
+}
+
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+
+
+
+
+
+/*  how to make a radio button - CSS
+    https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_radio */
+
+/* The container */
+.radio-container {
+  /* positions the container to be beside the text */
+  position: relative;
+
+  /* display - block
+  Displays an element as a block element (like <p>).
+  It starts on a new line, and takes up the whole width
+  https://www.w3schools.com/cssref/pr_class_display.asp */
+  display: block;
+
+  /* spacing between words and button */
+  padding-left: 1.5em;
+
+  /* spacing beween each line */
+  margin-bottom: 1em;
+
+  cursor: pointer;
+  font-size: 1em;
+}
+
+/* Hide the browser's default radio button */
+.radio-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.radio-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1.2em;
+  width: 1.2em;
+  background-color: #C4C4C4;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.radio-container:hover input ~ .radio-button {
+  background-color: #727272;
+  transition: all .15s ease-in;
+
+}
+
+/* When the radio button is checked, add a blue background */
+.radio-container input:checked ~ .radio-button {
+  background-color: black;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.radio-button:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radio-container input:checked ~ .radio-button:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.radio-container .radio-button:after {
+ 	top: 0.3em;
+	left: 0.3em;
+	width: 0.6em;
+	height: 0.6em;
+	border-radius: 100%;
+	background: white;
+}
+
+
+
+
+
+
+
+/* https://www.w3schools.com/howto/howto_css_image_overlay.asp */
+.image-container {
+  position: relative;
+  float: left;
+  width: 50em;
+  border: 0;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .3s ease;
+  backface-visibility: hidden;
+}
+
+.image-container:hover .image {
+  opacity: 0.6;
+}
+
+
+
+
+
+
+/*
+  TEXT ELEMENTS -------------------
+*/
+
+.content-container {
+  position: relative;
+  float: left;
+  width: 20em;
+  border: 0;
+}
+
+.navbar-home {
+  font-size:1.5em;
+  font-weight:bold;
+  float:left;
+  align-items: center;
+  color: black;
+  padding: 1em 1em 1em 0em;
+  /* border-bottom: 2em; */
+
+  /* outline: 1px solid red; */
+}
+
+.navbar {
+  font-size: 1em;
+  float: right;
+  align-items: center;
+  color: black;
+  padding: 2em 1em 0.3em 1em;
+  border-bottom: 0.3em none;
+
+  /* outline: 1px solid red; */
+}
+
+
+.navbar:hover {
+  color: black;
+  border-bottom: 2em;
+  /* text-decoration: underline; */
+  border-bottom: 0.2em solid black;
+
+  transition: all .5s;
+}
+
+
+
+/*
+  COMBINED ELEMENTS -------------------
+*/
+
+
+.col-25 {
+  flex: 25%;
+}
+
+.col-50 {
+  flex: 50%;
+}
+
+.col-75 {
+  flex: 75%;
+}
+
+
+.cart-container {
+  background-color: #f2f2f2;
+  padding: 2em;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+}
+
+.ticket-container {
+  background-color: #f2f2f2;
+  padding: 2em;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+}
+
+span.extra-info {
+  font-style: italic;
+  color: grey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* spacer */
