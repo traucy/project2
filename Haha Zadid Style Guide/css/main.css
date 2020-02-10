@@ -4,7 +4,7 @@
 */
 
 * {
-   font-family: "NotoSans";
+   font-family: "NotoSans", sans-serif;
 }
 
 code {
@@ -21,6 +21,7 @@ body {
   background-color: #F2F2F2;
   font-style: normal;
   padding: 2em;
+  font-family: "NotoSans", sans-serif;
 }
 
 .element {
@@ -34,6 +35,9 @@ body {
 h1 {
   font-size: 2rem;
   color: #FFC42D;
+  font-family: 'Cormorant Garamond', serif;
+  /* font-family: 'Yeseva One', cursive; */
+
 }
 
 h2 {
