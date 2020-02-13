@@ -9,7 +9,7 @@
 
 code {
   font-size: 0.8em;
-  color: #FF7F00;
+  color: #99d4e0;
 }
 
 .css-selector {
@@ -34,7 +34,7 @@ body {
 
 h1 {
   font-size: 2rem;
-  color: #FFC42D;
+  color: black;
   font-family: 'Cormorant Garamond', serif;
   /* font-family: 'Yeseva One', cursive; */
 
@@ -192,7 +192,7 @@ a:active {
 }
 
 .input-field:hover {
-  background-color: #FFC42D;
+  background-color: #cfe2e6;
   color: black;
   font-weight: bold;
 }
@@ -201,14 +201,14 @@ a:active {
   /* https://stackoverflow.com/questions/7648898/how-to-get-rid-of-blue-outer-border-when-clicking-on-a-form-input-field */
   outline:none;
   background-color: white;
-  border: 1px solid #FFC42D;
+  border: 1px solid #99d4e0;
 
 
   /* border-top-style: none;
   border-right-style: none;
   border-bottom-style: solid;
   border-left-style: none; */
-  border-color: #FFC42D;
+  border-color: #99d4e0;
   /* border-bottom-width: medium; */
 
   color: black;
@@ -278,14 +278,14 @@ label {
 
 /* On mouse-over, add a grey background color */
 .radio-container:hover input ~ .radio-button {
-  background-color: #727272;
+  background-color: #99d4e0;
   transition: all .15s ease-in;
 
 }
 
 /* When the radio button is checked, add a blue background */
 .radio-container input:checked ~ .radio-button {
-  background-color: black;
+  background-color: #99d4e0;
 }
 
 /* Create the indicator (the dot/circle - hidden when not checked) */
