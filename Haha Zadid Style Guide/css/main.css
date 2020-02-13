@@ -320,10 +320,6 @@ label {
   background-image: url('img/soho1.jpg')
 }
 
-.image-hover {
-
-}
-
 .image {
   opacity: 1;
   display: block;
@@ -366,6 +362,7 @@ label {
    opacity: 1;
    z-index: 2;
 }
+
 .image-container-product1 img:nth-child(2){ /* second <img> child of .image-container */
    filter: alpha(opacity=0);
    opacity: 0;
@@ -377,11 +374,13 @@ label {
    opacity: 0;
    z-index: 1;
 }
+
 .image-container-product1:hover img:nth-child(2){
    filter: alpha(opacity=100);
    opacity: 1;
    z-index: 2;
 }
+
 /*
   TEXT ELEMENTS -------------------
 */
