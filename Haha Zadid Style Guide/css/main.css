@@ -319,6 +319,8 @@ label {
 /* https://www.w3schools.com/howto/howto_css_image_overlay.asp */
 .image-container {
   position: relative;
+  transition: flex-grow 1500ms ease-in-out;
+  border:none;
   float: left;
   width: 50em;
   border: 0;
@@ -328,6 +330,7 @@ label {
   opacity: 1;
   display: block;
   width: 100%;
+  border-radius: 0.5em;
   height: auto;
   transition: .3s ease;
   backface-visibility: hidden;
