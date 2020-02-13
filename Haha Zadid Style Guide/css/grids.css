@@ -11,7 +11,9 @@
 	display: flex;
   flex-wrap: wrap;
 	/* border: 1px dashed blue; */
-	border: 1px dashed #CECECE;
+	/* border: 1px dashed #CECECE; */
+	transition: flex-grow 1500ms ease-in-out;
+	border:none;
 }
 
 .block {
@@ -50,7 +52,7 @@
 	/* flex-basis: 35em; */
 	padding: 0.4em 1em 1em 1em;
 	/* border: 1px dashed red; */
-	border: 1px dashed #CECECE;
+	/* border: 1px dashed #CECECE; */
 }
 
 .content-container {
