@@ -30,7 +30,6 @@
 }
 
 .menu-container {
-
 	flex: 1 1 30em;
 	flex-basis: 1em;
 	padding: 1em;
@@ -44,7 +43,7 @@
   flex: 1 1 20em;
   /* flex-basis: 20em; */
 	padding: 0em 1em 4.1em 1em;
-  border: 1px dashed #CECECE;
+  /* border: 1px dashed #CECECE; */
 }
 
 .image-container {
@@ -70,5 +69,14 @@
 
 .ticket-container {
 	flex: 1 1 30em;
+}
+
+.landing-container{
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+	margin-top: 50px;
+  width: 50%;
+	padding: 0.4em 1em 1em 1em;
 
 }
