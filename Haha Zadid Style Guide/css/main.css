@@ -35,8 +35,10 @@ body {
 h1 {
   font-size: 2rem;
   color: black;
-  font-family: 'Cormorant Garamond', serif;
+  /* font-family: 'Cormorant Garamond', serif; */
   /* font-family: 'Yeseva One', cursive; */
+  font-family: "NotoSans", sans-serif;
+
 
 }
 
