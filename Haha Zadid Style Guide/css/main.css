@@ -3,6 +3,8 @@
   Default styling for the style guide
 */
 
+@font-face {font-family: "Helvetica"; src: url('../fonts/Helvetica-Bold.ttf') format('truetype');}
+
 * {
    font-family: "NotoSans", sans-serif;
 }
@@ -395,12 +397,14 @@ label {
 }
 
 .navbar-home {
-  font-size:1.5em;
+  font-size:2em;
   font-weight:bold;
   float:left;
   align-items: center;
   color: black;
   padding: 1em 1em 1em 0em;
+  font-family: "Helvetica", sans-serif;
+
   /* border-bottom: 2em; */
 
   /* outline: 1px solid red; */
