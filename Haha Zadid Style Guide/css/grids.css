@@ -91,16 +91,15 @@
 	flex-wrap: wrap;
 	background: white;
 	padding: 3vw;
+	padding-bottom: 5em;
 
 }
 
 .col-1of2 {
-	flex: 1 1 1em;
+	flex: 1 1 20em;
   /* display: flex; */
   flex-wrap: wrap;
-  height: 15em;
+  height: 8em;
   padding: 2vw;
-
   /* border: 2px solid black; */
-
 }
