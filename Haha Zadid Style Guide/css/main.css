@@ -544,7 +544,7 @@ span.price {
    margin-right: auto;
    /*backface-visibility: hidden;*/
  }
- 
+
 .landing-middle {
   opacity: 0;
   position: absolute;
@@ -560,7 +560,7 @@ span.price {
   margin-left: auto;
   margin-right: auto;
   font-family: "Helvetica", sans-serif;
-  font-size: 50px;
+  font-size: 2em;
   line-height: normal;
 }
 
