@@ -562,6 +562,7 @@ span.price {
   font-family: "Helvetica", sans-serif;
   font-size: 2em;
   line-height: normal;
+  min-width: 20em;
 }
 
 .listings{
