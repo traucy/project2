@@ -80,3 +80,27 @@
 	padding: 0.4em 1em 1em 1em;
 
 }
+
+
+
+
+/* FOOTER */
+.footer-container {
+	flex: 1 1 45em;
+	display: flex;
+	flex-wrap: wrap;
+	background: white;
+	padding: 3vw;
+
+}
+
+.col-1of2 {
+	flex: 1 1 1em;
+  /* display: flex; */
+  flex-wrap: wrap;
+  height: 15em;
+  padding: 2vw;
+
+  /* border: 2px solid black; */
+
+}
