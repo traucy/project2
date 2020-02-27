@@ -121,6 +121,18 @@ a:active {
 }
 
 
+.spacer {
+  flex: 1 1 16em;
+	height: 8em;
+}
+
+.smallspacer {
+	flex: 1 1 16em;
+	height: 4em;
+}
+
+
+
 
 /*
   INTERACTIVE ELEMENTS -------------------
@@ -144,6 +156,7 @@ a:active {
   padding-left: 2rem;
   padding-right: 2rem;
   border: 1px solid black;
+  height: 3.5em;
 
   /* ways to add borders to the button.
   outline doesn't do transition that well.
@@ -173,8 +186,6 @@ a:active {
 
   color: white;
 }
-
-
 
 
 
