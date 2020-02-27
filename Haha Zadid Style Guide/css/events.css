@@ -1,0 +1,38 @@
+.col-container {
+  flex: 1 1 45em;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-1 {
+  flex: 1 1 1em;
+  /* display: flex; */
+  flex-wrap: wrap;
+  height: 15em;
+  padding: 2vw;
+
+  border: 2px solid black;
+}
+
+.col-2 {
+  flex: 1 1 60em;
+  display: flex;
+  flex-wrap: wrap;
+  height: 15em;
+
+  padding: 2vw;
+  border: 2px dashed black;
+  border-left: none;
+
+}
+
+.event-title {
+  padding: 2vw;
+
+}
+
+
+.event-descrip {
+  padding: 2vw;
+
+}
