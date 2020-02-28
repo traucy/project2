@@ -254,6 +254,27 @@ a:active {
   font-weight: bold;
 }
 
+.input-field-comments {
+  display: inline-block;
+  padding: 0.5rem;
+  background-color: white;
+  /* outline: black solid 1px; */
+  height: 10em;
+
+
+  border-top-style: none;
+  border-right-style: none;
+  border-bottom-style: solid;
+  border-left-style: none;
+
+  color: black;
+  font-size: 1em;
+  font-weight: bold;
+
+  text-decoration: none;
+  transition: all .2s ease-in-out;
+}
+
 
 input[type=text] {
   width: 100%;
@@ -434,15 +455,25 @@ label {
 .navbar-home {
   font-size:2em;
   font-weight:bold;
+  font-style: italic;
   float:left;
   align-items: center;
   color: black;
   padding: 1em 1em 1em 0em;
   font-family: "Helvetica", sans-serif;
+  opacity: 1;
+  transition: all 0.3s;
+
 
   /* border-bottom: 2em; */
 
   /* outline: 1px solid red; */
+}
+
+.navbar-home:hover{
+
+  opacity: 0.3;
+
 }
 
 .navbar {
