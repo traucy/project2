@@ -3,13 +3,15 @@
   Default styling for the style guide
 */
 
+@font-face {font-family: "Helvetica"; src: url('../fonts/Helvetica-Bold.ttf') format('truetype');}
+
 * {
-   font-family: "NotoSans";
+   font-family: "NotoSans", sans-serif;
 }
 
 code {
   font-size: 0.8em;
-  color: #FF7F00;
+  color: #99d4e0;
 }
 
 .css-selector {
@@ -20,6 +22,11 @@ code {
 body {
   background-color: #F2F2F2;
   font-style: normal;
+  /* padding: 2em; */
+  font-family: "NotoSans", sans-serif;
+}
+
+.padding{
   padding: 2em;
 }
 
@@ -33,7 +40,12 @@ body {
 
 h1 {
   font-size: 2rem;
-  color: #FFC42D;
+  color: black;
+  /* font-family: 'Cormorant Garamond', serif; */
+  /* font-family: 'Yeseva One', cursive; */
+  font-family: "NotoSans", sans-serif;
+
+
 }
 
 h2 {
@@ -136,7 +148,6 @@ a:active {
 .button-nav {
   cursor: pointer;
   display: inline-block;
-
   background-color: #F2F2F2;
   border-radius: 0em;
   margin-right: 1em;
@@ -199,7 +210,7 @@ a:active {
 }
 
 .input-field:hover {
-  background-color: #FFC42D;
+  background-color: #cfe2e6;
   color: black;
   font-weight: bold;
 }
@@ -208,18 +219,39 @@ a:active {
   /* https://stackoverflow.com/questions/7648898/how-to-get-rid-of-blue-outer-border-when-clicking-on-a-form-input-field */
   outline:none;
   background-color: white;
-  border: 1px solid #FFC42D;
+  border: 1px solid #99d4e0;
 
 
   /* border-top-style: none;
   border-right-style: none;
   border-bottom-style: solid;
   border-left-style: none; */
-  border-color: #FFC42D;
+  border-color: #99d4e0;
   /* border-bottom-width: medium; */
 
   color: black;
   font-weight: bold;
+}
+
+.input-field-comments {
+  display: inline-block;
+  padding: 0.5rem;
+  background-color: white;
+  /* outline: black solid 1px; */
+  height: 10em;
+
+
+  border-top-style: none;
+  border-right-style: none;
+  border-bottom-style: solid;
+  border-left-style: none;
+
+  color: black;
+  font-size: 1em;
+  font-weight: bold;
+
+  text-decoration: none;
+  transition: all .2s ease-in-out;
 }
 
 
@@ -285,14 +317,14 @@ label {
 
 /* On mouse-over, add a grey background color */
 .radio-container:hover input ~ .radio-button {
-  background-color: #727272;
+  background-color: #99d4e0;
   transition: all .15s ease-in;
 
 }
 
 /* When the radio button is checked, add a blue background */
 .radio-container input:checked ~ .radio-button {
-  background-color: black;
+  background-color: #99d4e0;
 }
 
 /* Create the indicator (the dot/circle - hidden when not checked) */
@@ -317,37 +349,76 @@ label {
 	background: white;
 }
 
-
-
-
-
-
-
 /* https://www.w3schools.com/howto/howto_css_image_overlay.asp */
 .image-container {
   position: relative;
+  transition: flex-grow 1500ms ease-in-out;
+  border:none;
   float: left;
   width: 50em;
-  border: 0;
+  background-image: url('img/soho1.jpg')
 }
 
 .image {
   opacity: 1;
   display: block;
   width: 100%;
+  border-radius: 0.5em;
   height: auto;
   transition: .3s ease;
   backface-visibility: hidden;
 }
 
-.image-container:hover .image {
+.image-container:hover {
   opacity: 0.6;
 }
 
+/* css properties for SOHO */
+.image-container-product1 {
+ position: relative;
+ transition: flex-grow 1500ms ease-in-out;
+ border:none;
+ float: left;
+ width: 48em;
+ height: 32em;
+ margin-right:40px;
+}
 
+.image-container-product1 img{
 
+   position: absolute;
+   /* transitions */
+   -webkit-transition: all .4s ease;
+      -moz-transition: all .4s ease;
+       -ms-transition: all .4s ease;
+        -o-transition: all .4s ease;
+           transition: all .4s ease;
 
+}
 
+.image-container-product1 img:nth-child(1) { /* first <img> child of .image-container */
+   filter: alpha(opacity=100);
+   opacity: 1;
+   z-index: 2;
+}
+
+.image-container-product1 img:nth-child(2){ /* second <img> child of .image-container */
+   filter: alpha(opacity=0);
+   opacity: 0;
+   z-index: 1;
+}
+/* hover */
+.image-container-product1:hover img:nth-child(1){
+   filter: alpha(opacity=0);
+   opacity: 0;
+   z-index: 1;
+}
+
+.image-container-product1:hover img:nth-child(2){
+   filter: alpha(opacity=100);
+   opacity: 1;
+   z-index: 2;
+}
 
 /*
   TEXT ELEMENTS -------------------
@@ -361,15 +432,27 @@ label {
 }
 
 .navbar-home {
-  font-size:1.5em;
+  font-size:2em;
   font-weight:bold;
+  font-style: italic;
   float:left;
   align-items: center;
   color: black;
   padding: 1em 1em 1em 0em;
+  font-family: "Helvetica", sans-serif;
+  opacity: 1;
+  transition: all 0.3s;
+
+
   /* border-bottom: 2em; */
 
   /* outline: 1px solid red; */
+}
+
+.navbar-home:hover{
+
+  opacity: 0.3;
+
 }
 
 .navbar {
@@ -379,7 +462,7 @@ label {
   color: black;
   padding: 2em 1em 0.3em 1em;
   border-bottom: 0.3em none;
-
+  font-family: "Helvetica", sans-serif;
   /* outline: 1px solid red; */
 }
 
@@ -437,20 +520,83 @@ span.price {
   color: grey;
 }
 
+.landing-image{
+  /* width: 500px; */
+  background-image: url("../img/landing.jpg");
+  position:relative;
+  /* Full height */
+  height: 100%;
+  min-height: 1000px;
+  min-width: 500px;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 3em;
+}
+
+.fade-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: white;
+  z-index:1;
+  opacity: 0;
+  /* transition: 0.8s ease; */
+
+}
+
+.landing-image:hover .landing-middle {
+  opacity: 1;
+  transition: 0.8s ease;
+}
+
+.landing-image:hover .fade-container {
+  opacity: 0.5;
+  transition: 0.8s ease;
+}
 
 
+.landing-portrait {
+  /*opacity: 1;*/
+  display: block;
+  width: 80%;
+  transition: .8s ease;
+  margin-left: auto;
+  margin-right: auto;
+  /*backface-visibility: hidden;*/
+}
+ .arrow{
+   /*opacity: 1;*/
+   display: block;
+   width: 10%;
+   transition: .8s ease;
+   margin-left: auto;
+   margin-right: auto;
+   /*backface-visibility: hidden;*/
+ }
 
+.landing-middle {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2;
+}
 
+.landing-text{
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Helvetica", sans-serif;
+  font-size: 2em;
+  line-height: normal;
+  min-width: 20em;
+}
 
-
-
-
-
-
-
-
-
-
-
-
+.listings{
+  padding: 1em;
+}
 /* spacer */

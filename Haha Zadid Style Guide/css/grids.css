@@ -11,7 +11,9 @@
 	display: flex;
   flex-wrap: wrap;
 	/* border: 1px dashed blue; */
-	border: 1px dashed #CECECE;
+	/* border: 1px dashed #CECECE; */
+	transition: flex-grow 1500ms ease-in-out;
+	border:none;
 }
 
 .block {
@@ -28,7 +30,6 @@
 }
 
 .menu-container {
-
 	flex: 1 1 30em;
 	flex-basis: 1em;
 	padding: 1em;
@@ -42,7 +43,7 @@
   flex: 1 1 20em;
   /* flex-basis: 20em; */
 	padding: 0em 1em 4.1em 1em;
-  border: 1px dashed #CECECE;
+  /* border: 1px dashed #CECECE; */
 }
 
 .image-container {
@@ -50,7 +51,7 @@
 	/* flex-basis: 35em; */
 	padding: 0.4em 1em 1em 1em;
 	/* border: 1px dashed red; */
-	border: 1px dashed #CECECE;
+	/* border: 1px dashed #CECECE; */
 }
 
 .content-container {
@@ -68,5 +69,36 @@
 
 .ticket-container {
 	flex: 1 1 30em;
+}
 
+.landing-container{
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+	margin-top: 50px;
+  width: 50%;
+	padding: 0.4em 1em 1em 1em;
+
+}
+
+
+
+
+/* FOOTER */
+.footer-container {
+	flex: 1 1 45em;
+	display: flex;
+	flex-wrap: wrap;
+	background: white;
+	padding: 3vw;
+	padding-bottom: 5em;
+}
+
+.col-1of2 {
+	flex: 1 1 20em;
+  /* display: flex; */
+  flex-wrap: wrap;
+  height: 8em;
+  padding: 2vw;
+  /* border: 2px solid black; */
 }
