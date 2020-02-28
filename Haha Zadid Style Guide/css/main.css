@@ -440,10 +440,19 @@ label {
   color: black;
   padding: 1em 1em 1em 0em;
   font-family: "Helvetica", sans-serif;
+  opacity: 1;
+  transition: all 0.3s;
+
 
   /* border-bottom: 2em; */
 
   /* outline: 1px solid red; */
+}
+
+.navbar-home:hover{
+
+  opacity: 0.3;
+
 }
 
 .navbar {
