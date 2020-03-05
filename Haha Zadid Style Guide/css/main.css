@@ -644,7 +644,22 @@ span.price {
      /* font-size: 5em; */
    }
 
-   .footer-container{
-     font-size: 1em;
+   .image-container-product1{
+    height: 15em;
    }
+
+   /* .image{
+     margin-left: auto;
+     margin-right: auto;
+   } */
+}
+
+/*
+@media only screen and (max-width: 100px) {
+
+  .image-container-product1{
+   height: 20em;
+  } */
+
+
 }
