@@ -554,6 +554,8 @@ span.price {
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: 3em;
+  flex-shrink: 0;
+
 }
 
 .fade-container {
@@ -621,3 +623,19 @@ span.price {
   padding: 1em;
 }
 /* spacer */
+
+@media only screen and (max-width: 600px) {
+  .landing-image {
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 10em;
+    min-height: 50em;
+   }
+   .landing-text{
+     margin-left: auto;
+     margin-right: auto;
+     font-size: 1em;
+     line-height: normal;
+     min-width: 5em;
+   }
+}
