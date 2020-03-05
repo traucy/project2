@@ -23,7 +23,7 @@
           <li><a class="navbar" href="about.html">About Us</a></li>
           <li><a class="navbar" href="tickets.html">Tickets</a></li>
           <li><a class="navbar" href="events.html">Events</a></li>
-          <!-- <li><a class="navbar" href="haha.html">Our Work</a></li> -->
+          <!-- <li><a class="navbar" href="review.html">Reviews</a></li> -->
         </ul>
       </div>
     </div>
@@ -73,36 +73,84 @@
           in Beijing, China, between central Beijing and Beijing Capital International Airport.
           According to Zaha Hadid, the project's architect, it is a "welcome and farewell to Beijing".</p>
 
-
-      </div>
-
-      <div class="spacer">
-
       </div>
     </div>
 
 
-        <footer>
-          <div class="footer-container">
-            <div class="col-1of2">
-              <h4>EMAIL</h4>
-              <p>zahahadid@design.com</p>
-              <p> Leave Us a Review <a href="review.html">here!</a>
-              <div style="padding-top:0.5em;"></div>
-            </div>
+    <div class="spacer"></div>
 
-            <div class="col-1of2">
-              <h4>PHONE</h4>
-              <p>1-800-253-8298</p>
-            </div>
+    <section id="checkout">
+      <h2 style="padding-left:1.5em;">Leave Feedback </h2>
+      <div class="container" style="border:none;">
+        <div class="block">
+          <div class="col-25">
+            <div class="ticket-container">
 
-            <div class="col-1of2">
-              <h4>OFFICE</h4>
-              <p>10 Bowling Green Ln, Farringdon, London EC1R 0BQ, United Kingdom</p>
+              <div class="col-50">
+                <label>First Name</label>
+                <input class="input-field" type="text" name="first" placeholder="First">
+              </div>
+
+              <div class="col-50">
+                <label>Last Name</label>
+                <input class="input-field" type="text" name="last" placeholder="Last">
+              </div>
+
+              <div class="col-50">
+                <label>Email</label>
+                <input class="input-field" type="text" name="first" placeholder="name@contact.com">
+              </div>
+
             </div>
           </div>
-        </footer>
+        </div>
 
+    <!-- https://www.w3schools.com/howto/howto_css_checkout_form.asp -->
+        <div class="block">
+            <div class="ticket-container">
+              <form action="/action_page.php" method="get">
+                <div class="col-50">
+                  <label>Subject</label>
+                  <input class="input-field" type="text" name="first" placeholder="Subject Header">
+                </div>
+
+                <div class="col-50">
+                  <label>Comment</label>
+                  <input class="input-field-comments" type="text" name="last" placeholder="Comments">
+                </div>
+
+                <button class="button-nav" style="margin-top: 1em;" type="reset" value="Reset">Reset</button>
+                <button class="button-nav" style="margin-top: 1em;" type="submit" value="Submit">Submit</button>
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+    <footer>
+      <div class="footer-container">
+        <div class="col-1of2">
+          <h4>EMAIL</h4>
+          <p>zahahadid@design.com</p>
+          <p><a href="review.html">Leave Us a Review</a>
+          <p><a href="citations.html">Citations</a>
+          <div style="padding-top:0.5em;"></div>
+        </div>
+
+        <div class="col-1of2">
+          <h4>PHONE</h4>
+          <p>1-800-253-8298</p>
+        </div>
+
+        <div class="col-1of2">
+          <h4>OFFICE</h4>
+          <p>10 Bowling Green Ln, Farringdon, London EC1R 0BQ, United Kingdom</p>
+        </div>
+      </div>
+    </footer>
 
 
   </body>

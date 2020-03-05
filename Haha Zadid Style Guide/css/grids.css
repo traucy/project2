@@ -101,7 +101,7 @@
 	flex: 1 1 20em;
   /* display: flex; */
   flex-wrap: wrap;
-  height: 8em;
+  /* height: 10em; */
   padding: 2vw;
   /* border: 2px solid black; */
 }
