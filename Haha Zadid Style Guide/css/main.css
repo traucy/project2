@@ -616,9 +616,11 @@ span.price {
   font-family: "Helvetica", sans-serif;
   font-size: 2em;
   line-height: normal;
-  min-width: 18em;
+  min-width: 1em;
 }
+ .landing-des{
 
+ }
 .listings{
   padding: 1em;
 }
@@ -637,5 +639,12 @@ span.price {
      font-size: 1em;
      line-height: normal;
      min-width: 5em;
+   }
+   .landing-des{
+     /* font-size: 5em; */
+   }
+
+   .footer-container{
+     font-size: 1em;
    }
 }
