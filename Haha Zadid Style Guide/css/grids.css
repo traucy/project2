@@ -52,6 +52,8 @@
 	padding: 0.4em 1em 1em 1em;
 	/* border: 1px dashed red; */
 	/* border: 1px dashed #CECECE; */
+	flex-wrap: wrap;
+
 }
 
 .content-container {
@@ -80,9 +82,6 @@
 	padding: 0.4em 1em 1em 1em;
 
 }
-
-
-
 
 /* FOOTER */
 .footer-container {

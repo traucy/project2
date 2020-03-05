@@ -177,7 +177,8 @@ a:active {
 }
 
 .button-nav:hover, .button-nav:focus {
-  /* https://stackoverflow.com/questions/7648898/how-to-get-rid-of-blue-outer-border-when-clicking-on-a-form-input-field */
+  /* https://stackoverflow.com/questions/7648898/how-to-get-rid-of-blue-outer-border-when-clicking-on-a-form-
+  -field */
   outline:none !important;
 
   background-color: black;
@@ -205,6 +206,26 @@ a:active {
   font-size: 1em;
   font-weight: bold;
 
+  text-decoration: none;
+  transition: all .2s ease-in-out;
+}
+
+.input-field-comments{
+  display: inline-block;
+  padding: 0.5rem;
+  background-color: white;
+  /* outline: black solid 1px; */
+
+
+  border-top-style: none;
+  border-right-style: none;
+  border-bottom-style: solid;
+  border-left-style: none;
+
+  color: black;
+  font-size: 1em;
+  font-weight: bold;
+  height: 10em;
   text-decoration: none;
   transition: all .2s ease-in-out;
 }
@@ -533,6 +554,8 @@ span.price {
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: 3em;
+  flex-shrink: 0;
+
 }
 
 .fade-container {
@@ -600,3 +623,19 @@ span.price {
   padding: 1em;
 }
 /* spacer */
+
+@media only screen and (max-width: 600px) {
+  .landing-image {
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 10em;
+    min-height: 50em;
+   }
+   .landing-text{
+     margin-left: auto;
+     margin-right: auto;
+     font-size: 1em;
+     line-height: normal;
+     min-width: 5em;
+   }
+}
