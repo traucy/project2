@@ -644,7 +644,13 @@ span.price {
      /* font-size: 5em; */
    }
 
-   .footer-container{
-     font-size: 1em;
+   .image-container-product1{
+    height: 15em;
    }
+
+   .header-block{
+     font-size: 0.7em;
+     flex-wrap: nowrap;
+   }
+
 }
