@@ -84,7 +84,7 @@
 	margin-top: 50px;
   width: 50%;
 	padding: 0.4em 1em 1em 1em;
-
+  align-items: center;
 }
 
 /* FOOTER */
@@ -94,7 +94,7 @@
 	flex-wrap: wrap;
 	background: white;
 	padding: 3vw;
-	padding-bottom: 5em;
+	/* padding-bottom: 5em; */
 }
 
 .col-1of2 {

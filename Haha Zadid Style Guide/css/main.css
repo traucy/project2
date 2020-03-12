@@ -3,6 +3,7 @@
   Default styling for the style guide
 */
 
+/* uploaded selected font */
 @font-face {font-family: "Helvetica"; src: url('../fonts/Helvetica-Bold.ttf') format('truetype');}
 
 * {
@@ -16,7 +17,6 @@ code {
 
 .css-selector {
   font-weight: bold;;
-
 }
 
 body {
@@ -41,11 +41,7 @@ body {
 h1 {
   font-size: 2rem;
   color: black;
-  /* font-family: 'Cormorant Garamond', serif; */
-  /* font-family: 'Yeseva One', cursive; */
   font-family: "NotoSans", sans-serif;
-
-
 }
 
 h2 {
@@ -64,7 +60,6 @@ h4 {
 }
 
 p {
-  /* margin-top: 0; */
   font-size: 0.8rem;
   line-height: 1.5rem;
 }
@@ -130,9 +125,6 @@ a:active {
 	flex: 1 1 16em;
 	height: 4em;
 }
-
-
-
 
 /*
   INTERACTIVE ELEMENTS -------------------
@@ -289,11 +281,20 @@ label {
   display: block;
 }
 
+<<<<<<< HEAD
+
+.citations-style {
+  float:left;
+  font-size: 0.5em;
+  padding-bottom:0.5em;
+}
 
 
 
 
 
+=======
+>>>>>>> landing
 /*  how to make a radio button - CSS
     https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_radio */
 
@@ -371,6 +372,7 @@ label {
 }
 
 /* https://www.w3schools.com/howto/howto_css_image_overlay.asp */
+/* container for image for products */
 .image-container {
   position: relative;
   transition: flex-grow 1500ms ease-in-out;
@@ -390,6 +392,7 @@ label {
   backface-visibility: hidden;
 }
 
+/* when image was hovered, opacity of image turns to 0.6 */
 .image-container:hover {
   opacity: 0.6;
 }
@@ -405,8 +408,8 @@ label {
  margin-right:40px;
 }
 
-.image-container-product1 img{
 
+.image-container-product1 img{
    position: absolute;
    /* transitions */
    -webkit-transition: all .4s ease;
@@ -452,6 +455,7 @@ label {
   border: 0;
 }
 
+/* navigation to return home */
 .navbar-home {
   font-size:2em;
   font-weight:bold;
@@ -469,13 +473,12 @@ label {
 
   /* outline: 1px solid red; */
 }
-
+/* when home was hovered, opacity would turn to 0.3 */
 .navbar-home:hover{
-
   opacity: 0.3;
-
 }
 
+/* css for nav bar */
 .navbar {
   font-size: 1em;
   float: right;
@@ -487,13 +490,12 @@ label {
   /* outline: 1px solid red; */
 }
 
-
+/* response to when navbar was hovered */
 .navbar:hover {
   color: black;
   border-bottom: 2em;
   /* text-decoration: underline; */
   border-bottom: 0.2em solid black;
-
   transition: all .5s;
 }
 
@@ -541,8 +543,9 @@ span.price {
   color: grey;
 }
 
+
+/* css for landing image */
 .landing-image{
-  /* width: 500px; */
   background-image: url("../img/landing.jpg");
   position:relative;
   /* Full height */
@@ -555,9 +558,9 @@ span.price {
   background-size: cover;
   margin-top: 3em;
   flex-shrink: 0;
-
 }
 
+/* fade container for landing image */
 .fade-container {
   position: absolute;
   height: 100%;
@@ -565,8 +568,6 @@ span.price {
   background: white;
   z-index:1;
   opacity: 0;
-  /* transition: 0.8s ease; */
-
 }
 
 .landing-image:hover .landing-middle {
@@ -580,15 +581,17 @@ span.price {
 }
 
 
-.landing-portrait {
+/* .landing-portrait { */
   /*opacity: 1;*/
-  display: block;
+  /* display: block;
   width: 80%;
   transition: .8s ease;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto; */
   /*backface-visibility: hidden;*/
-}
+/* } */
+
+/* css for arrow icon on landing image */
  .arrow{
    /*opacity: 1;*/
    display: block;
@@ -598,6 +601,7 @@ span.price {
    margin-right: auto;
    /*backface-visibility: hidden;*/
  }
+
 
 .landing-middle {
   opacity: 0;
@@ -610,6 +614,7 @@ span.price {
   z-index: 2;
 }
 
+/* css for the text on the landing image */
 .landing-text{
   margin-left: auto;
   margin-right: auto;
@@ -618,14 +623,26 @@ span.price {
   line-height: normal;
   min-width: 1em;
 }
+
  .landing-des{
 
  }
 .listings{
   padding: 1em;
 }
+
+.footer-container{
+  display: flex;
+  padding-bottom: 0;
+}
+
+.col-1of2{
+   flex: 1;
+}
 /* spacer */
 
+
+/* media query */
 @media only screen and (max-width: 600px) {
   .landing-image {
     margin-left: auto;
@@ -640,17 +657,9 @@ span.price {
      line-height: normal;
      min-width: 5em;
    }
-   .landing-des{
-     /* font-size: 5em; */
-   }
 
    .image-container-product1{
     height: 15em;
-   }
-
-   .header-block{
-     font-size: 0.7em;
-     flex-wrap: nowrap;
    }
 
 }
